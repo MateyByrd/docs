@@ -1,0 +1,4 @@
+baseURL = "https://mateybyrd.github.io/docs/"
+languageCode = "en-us"
+title = "Nick's Documentation"
+theme = "docs"

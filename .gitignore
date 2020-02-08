@@ -1,0 +1,4 @@
+# Partially created by https://www.gitignore.io/api/hugo
+### Hugo ###
+public/
+resources/_gen/

@@ -1,0 +1,50 @@
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    @apply text-lg;
+    @apply px-4;
+}
+
+.content {
+    @apply max-w-screen-md;
+    @apply mx-auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        @apply px-0;
+    }
+}
+
+h1 {
+    @apply text-3xl;
+    @apply w-full;
+    @apply border-b;
+    @apply border-gray-300;
+    @apply mt-4;
+    @apply mb-2;
+}
+
+h2 {
+    @apply text-2xl;
+}
+
+h3 {
+    @apply text-xl;
+}
+
+a {
+    @apply text-teal-700;
+    @apply underline
+}
+a:hover {
+    @apply text-teal-500;
+}
+a:visited {
+    @apply text-indigo-700;
+}
+
+p {
+    @apply mb-6;
+    @apply break-words;
+    @apply leading-relaxed;
+}
