@@ -24,20 +24,15 @@ Maecenas accumsan nibh enim, eget faucibus ipsum eleifend in. Quisque cursus hen
  
 > Some inspiring quote to represent the quote format.
 
+```python
+# Code Block with highlighting!
+if True:
+  print("Hello World")
 ```
-Code Block
-```
-
-# Embeds
-
-{{< embed href="https://nickbelzer.me" title="My Personal Website" >}}
-
-{{< embed href="https://reddit.com" title="Reddit" >}}
 
 # Links
 
-[external-link](https://wiki.nickbelzer.me)
+- [external-link](https://wiki.nickbelzer.me)
 (Should open in a new tab)
-
-[internal-link](/)
+- [internal-link](/)
 (Should open in this tab)

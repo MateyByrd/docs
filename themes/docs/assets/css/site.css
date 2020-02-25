@@ -49,36 +49,18 @@ p {
     @apply leading-relaxed;
 }
 
-a.embed {
-    @apply bg-gray-200;
-    @apply px-3;
-    @apply py-1;
-    @apply rounded-lg;
-    @apply inline-flex;
-    @apply items-center;
-    @apply mb-2;
-    @apply no-underline
-}
-
-a.embed .text {
-    @apply ml-2;
-}
-
 ul {
     @apply list-disc;
     @apply pl-6;
 }
 
-blockquote, pre {
+blockquote {
     @apply px-4;
-    @apply py-2;
-    @apply bg-gray-100;
     @apply my-2;
     @apply border-l-4;
     @apply border-gray-300;
-}
-
-blockquote {
+    @apply bg-gray-100;
+    @apply py-2;
     @apply italic;
 }
 
@@ -97,4 +79,12 @@ code {
 pre code {
     @apply bg-transparent;
     @apply px-0;
+}
+
+.highlight {
+    @apply border-gray-300;
+    @apply border;
+    @apply p-2;
+    @apply px-4;
+    @apply rounded-md;
 }

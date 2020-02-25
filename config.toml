@@ -2,3 +2,12 @@ baseURL = "https://wiki.nickbelzer.me/"
 languageCode = "en-us"
 title = "Nick's Documentation"
 theme = "docs"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNumbersInTable = false
+    noClasses = true
+    style = "github"
+    tabWidth = 4
