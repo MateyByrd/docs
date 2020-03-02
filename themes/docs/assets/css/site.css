@@ -13,12 +13,6 @@ body {
     @apply mx-auto;
 }
 
-@media (min-width: 768px) {
-    body {
-        @apply px-0;
-    }
-}
-
 h1 {
     @apply text-3xl;
     @apply w-full;
