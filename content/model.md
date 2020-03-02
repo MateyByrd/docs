@@ -1,5 +1,6 @@
 ---
 title: Elements showcase
+draft: false
 ---
 
 This page will act as a simple showcase of all the elements an article could have, this aimed to be used during development and as a collection to showcase the different elements.
@@ -15,12 +16,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed dapibus sapi
 
 Maecenas accumsan nibh enim, eget faucibus ipsum eleifend in. Quisque cursus hendrerit ex sit amet bibendum. Aenean auctor ipsum sed nulla aliquam, ut consectetur risus maximus. Fusce accumsan enim at lectus consectetur, ut dignissim sem varius. Phasellus ut velit pharetra, convallis tellus nec, venenatis tortor. Sed at turpis tristique, luctus magna placerat, viverra orci. Nunc diam elit, iaculis rutrum tortor a, varius volutpat nisi. Phasellus ornare, sem et faucibus euismod, sem sapien finibus ligula, lobortis vehicula nulla odio eu augue.
 
+![image](https://via.placeholder.com/600)
 
 **Bold Text** _Italic Text_ `Inline code`
 
+Some more text that makes a bullet point:
+
 - Bullet item
   - With sub-item
-
+  
+Let me tell you about this awesome piece of code that reflects this quote:
  
 > Some inspiring quote to represent the quote format.
 
