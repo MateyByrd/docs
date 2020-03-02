@@ -1,6 +1,6 @@
 baseURL = "https://wiki.nickbelzer.me/"
 languageCode = "en-us"
-title = "Nick's Documentation"
+title = "My External Brain"
 theme = "docs"
 
 [markup]
