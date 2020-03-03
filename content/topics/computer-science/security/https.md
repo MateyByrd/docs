@@ -3,6 +3,8 @@ title: HTTPS
 draft: false
 ---
 
+> This article is mostly my summary of the Wikipedia page on HTTPS[^wikipedia-https] and TLS[^wikipedia-tls].
+
 HTTPS is the secure version of HTTP, however I was interested in how the security of HTTPS is made up. HTTS is also named HTTP over TLS (previously HTTP over SSL). Here TLS is providing the layer of security that is supposed to protect our privacy and the integrity of the data we load and send.
 
 ## What is encrypted
@@ -28,10 +30,7 @@ When carefully configured TLS can even provide extra properties like *forward se
 
 It should be noted that even a single page on your website not using HTTPS introduces risks to the user.
 
-Next to that the security depends on the key exchange algorithm, cipher and MAC used. This should be looked up before implementation for example on the Wikipedia article on TLS.
+Next to that the security depends on the key exchange algorithm, cipher and MAC used. This should be looked up before implementation for example on the Wikipedia article on TLS[^wikipedia-tls].
 
----
-
-## References
-
-- [Wikipedia article about TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+[^wikipedia-https]: [Wikipedia (HTTPS)](https://en.wikipedia.org/wiki/HTTPS)
+[^wikipedia-tls]: [Wikipedia (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security)

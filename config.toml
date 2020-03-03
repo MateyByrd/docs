@@ -2,6 +2,7 @@ baseURL = "https://wiki.nickbelzer.me/"
 languageCode = "en-us"
 title = "My External Brain"
 theme = "docs"
+footnoteReturnLinkContents = "↩"
 
 [markup]
   [markup.highlight]

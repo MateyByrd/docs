@@ -1,6 +1,6 @@
 ---
 title: Elements showcase
-draft: false
+draft: true
 ---
 
 This page will act as a simple showcase of all the elements an article could have, this aimed to be used during development and as a collection to showcase the different elements.

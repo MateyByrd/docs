@@ -2,4 +2,4 @@
 title: Topics
 draft: false
 ---
-This page will contain a link to all the main topics/categories I have collected something about.
+Above you can find all the topics I've currently published something on.

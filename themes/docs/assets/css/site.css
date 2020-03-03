@@ -41,10 +41,10 @@ a {
     @apply underline
 }
 a:hover {
-    @apply text-teal-500;
+    @apply text-teal-600 !important;
 }
 a:visited {
-    @apply text-indigo-700;
+    @apply text-indigo-900;
 }
 
 p {
@@ -108,20 +108,23 @@ p img {
     max-width: var(--page-width);
 }
 
-.content .navigation {
+a.footnote-ref {
+    @apply no-underline;
+}
+
+.footnotes {
     @apply bg-gray-100;
     @apply mx-4;
-    @apply mb-4;
-    @apply px-4;
-    @apply py-2;
-    @apply rounded-lg
+    @apply py-1;
+    @apply rounded-lg;
+    @apply text-sm;
 }
 
-.content .navigation * {
-    @apply px-0;
+.footnotes a.footnote-backref {
+    @apply no-underline;
 }
 
-.content .navigation ul {
-    @apply mb-0;
+.footnotes p {
+    @apply p-0;
+    @apply mb-1;
 }
-
