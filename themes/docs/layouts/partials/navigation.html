@@ -1,19 +1,14 @@
 <div class="content">
-    <div class="navigation">
-        {{ if .Parent }}
-        <a href="{{.Parent.Permalink}}">Up (to {{.Parent.Title}})</a>
-        {{ end }}
-        {{ if ge (len .Pages) 1 }}
-        <div>
-            <h3>{{ .Title }}/</h3>
-            <ul>
+    {{- partial "breadcrumbs.html" . -}}
+    <div class="navigation mt-6">
+        <div class="mx-4 mb-4 flex flex-col items-start">
+            {{ if ge (len .Pages) 1 }}
                 {{ range .Pages }}
                     {{ if .Title }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        <a href="{{ .Permalink }}" class="px-4 py-1 no-underline bg-gray-50 rounded-lg mb-1 shadow-sm hover:bg-gray-100 transition ease-in-out duration-150">{{ .Title }}</a>
                     {{ end }}
                 {{ end }}
-            </ul>
+            {{ end }}
         </div>
-        {{ end }}
     </div>
 </div>
