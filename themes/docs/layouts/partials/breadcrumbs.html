@@ -1,0 +1,14 @@
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+{{ if gt (len (split $url "/")) 1 }}
+<nav class="text-sm px-4 py-1 mx-4 mb-2">
+  <a href="/" class="font-bold no-underline">Home</a>
+  {{ range $index, $element := split $url "/" }}
+    {{ $.Scratch.Add "path" $element }}
+      {{ if ne $element "" }}
+      / <a href='{{ $.Scratch.Get "path" }}' class="no-underline">{{ humanize . }}</a></li>
+      {{ $.Scratch.Add "path" "/" }}
+      {{ end }}
+  {{ end }}
+</nav>
+{{ end }}

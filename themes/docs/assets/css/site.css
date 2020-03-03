@@ -1,18 +1,16 @@
+:root {
+    --page-width: 512px;
+}
+
 body {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    @apply text-lg;
-    @apply px-4;
+    font-size: 16px;
+    font-family: Avenir Next, Geneva, sans-serif;
+    @apply text-gray-900;
 }
 
 .content {
-    @apply max-w-screen-md;
+    max-width: var(--page-width);
     @apply mx-auto;
-}
-
-@media (min-width: 768px) {
-    body {
-        @apply px-0;
-    }
 }
 
 h1 {
@@ -22,6 +20,8 @@ h1 {
     @apply border-gray-300;
     @apply mt-4;
     @apply mb-2;
+    @apply mx-2;
+    @apply px-6;
 }
 
 h2 {
@@ -32,19 +32,99 @@ h3 {
     @apply text-xl;
 }
 
+h2, h3, h4 {
+    @apply px-8;
+}
+
 a {
     @apply text-teal-700;
     @apply underline
 }
 a:hover {
-    @apply text-teal-500;
+    @apply text-teal-600 !important;
 }
 a:visited {
-    @apply text-indigo-700;
+    @apply text-indigo-900;
 }
 
 p {
-    @apply mb-6;
+    @apply px-8;
+    @apply mb-4;
     @apply break-words;
     @apply leading-relaxed;
+}
+
+ul {
+    @apply mb-4;
+    @apply list-disc;
+    @apply px-6;
+    @apply ml-8;
+}
+
+ul ul {
+    @apply px-0;
+}
+
+blockquote {
+    @apply mx-4;
+    @apply my-2;
+    @apply border-l-4;
+    @apply border-gray-300;
+    @apply bg-gray-100;
+    @apply py-2;
+    @apply italic;
+}
+
+blockquote p {
+    @apply px-4;
+    @apply m-0;
+}
+
+code {
+    @apply bg-gray-200;
+    @apply px-2;
+    @apply rounded;
+    @apply text-base;
+    @apply text-gray-700;
+}
+
+pre code {
+    @apply bg-transparent;
+    @apply px-0;
+}
+
+.highlight {
+    @apply mx-4;
+    @apply border-gray-300;
+    @apply border;
+    @apply p-2;
+    @apply px-4;
+    @apply rounded-md;
+}
+
+p img {
+    margin-left: -1rem;
+    width: calc(100% + 2rem);
+    max-width: var(--page-width);
+}
+
+a.footnote-ref {
+    @apply no-underline;
+}
+
+.footnotes {
+    @apply bg-gray-100;
+    @apply mx-4;
+    @apply py-1;
+    @apply rounded-lg;
+    @apply text-sm;
+}
+
+.footnotes a.footnote-backref {
+    @apply no-underline;
+}
+
+.footnotes p {
+    @apply p-0;
+    @apply mb-1;
 }
