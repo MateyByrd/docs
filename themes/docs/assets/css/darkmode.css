@@ -1,0 +1,33 @@
+body.dark-mode {
+    @apply bg-dark;
+    @apply text-gray-200;
+}
+
+.dark-mode a {
+    @apply text-teal-400;
+}
+.dark-mode a:hover {
+    @apply text-teal-300 !important;
+}
+.dark-mode a:visited {
+    @apply text-indigo-600;
+}
+
+.dark-mode .navigation .navigation-option {
+    @apply border border-gray-600;
+    @apply bg-dark;
+}
+
+.dark-mode .navigation .navigation-option:hover {
+    background-color: #1A202C;
+}
+
+.dark-mode blockquote,
+.dark-mode .footnotes {
+    @apply bg-transparent;
+}
+
+.dark-mode .footnotes {
+    @apply border border-gray-600;
+    @apply bg-transparent;
+}
