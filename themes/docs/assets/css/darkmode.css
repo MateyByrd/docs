@@ -22,12 +22,6 @@ body.dark-mode {
     background-color: #1A202C;
 }
 
-.dark-mode blockquote,
-.dark-mode .footnotes {
-    @apply bg-transparent;
-}
-
-.dark-mode .footnotes {
-    @apply border border-gray-600;
+.dark-mode blockquote {
     @apply bg-transparent;
 }

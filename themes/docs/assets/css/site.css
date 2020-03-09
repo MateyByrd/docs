@@ -113,11 +113,10 @@ a.footnote-ref {
 }
 
 .footnotes {
-    @apply bg-gray-100;
     @apply mx-4;
     @apply py-1;
-    @apply rounded-lg;
     @apply text-sm;
+    @apply text-gray-500;
 }
 
 .footnotes a.footnote-backref {
