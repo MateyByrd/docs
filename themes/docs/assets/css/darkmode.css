@@ -10,7 +10,7 @@ body.dark-mode {
     @apply text-teal-300 !important;
 }
 .dark-mode a:visited {
-    @apply text-indigo-600;
+    @apply text-indigo-500;
 }
 
 .dark-mode .navigation .navigation-option {

@@ -44,7 +44,7 @@ a:hover {
     @apply text-teal-600 !important;
 }
 a:visited {
-    @apply text-indigo-900;
+    @apply text-indigo-800;
 }
 
 p {
