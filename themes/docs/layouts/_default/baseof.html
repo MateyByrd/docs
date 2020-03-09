@@ -4,9 +4,12 @@
     <body>
         {{- partial "header.html" . -}}
         <div id="content">
-        {{- partial "navigation.html" . -}}
+        {{ if ne .Page.IsHome true }}
+            {{- partial "navigation.html" . -}}
+        {{ end }}
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+        {{- partial "script_includes.html" . -}}
     </body>
 </html>

@@ -1,11 +1,16 @@
 <div class="content">
     {{- partial "breadcrumbs.html" . -}}
     <div class="navigation mt-6">
-        <div class="mx-4 mb-4 flex flex-col items-start">
+        <div class="mx-4 mb-6">
             {{ if ge (len .Pages) 1 }}
                 {{ range .Pages }}
                     {{ if .Title }}
-                        <a href="{{ .Permalink }}" class="px-4 py-1 no-underline bg-gray-50 rounded-lg mb-1 shadow-sm hover:bg-gray-100 transition ease-in-out duration-150">{{ .Title }}</a>
+                        <a href="{{ .Permalink }}" class="navigation-option px-4 py-1 block no-underline rounded-md mb-1 shadow-sm transition ease-in-out duration-150 inline-flex items-center w-full">
+                            <div class="h-6 w-auto mr-1">
+                                {{- partial "title_icon.html" . -}}
+                            </div>
+                            {{ .Title }}
+                        </a>
                     {{ end }}
                 {{ end }}
             {{ end }}

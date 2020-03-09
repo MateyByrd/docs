@@ -1,5 +1,6 @@
 ---
 title: Computer Science
+icon: 🔬
 draft: false
 ---
 

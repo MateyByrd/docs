@@ -1,0 +1,7 @@
+{{ if .Page.Params.icon }}
+    {{ if hasPrefix .Page.Params.icon "/" }}
+        <img class="h-full w-auto" src="{{ .Page.Params.icon | safeURL }}" />
+    {{ else }}
+        {{ .Page.Params.icon }}
+    {{ end }}
+{{ end }}

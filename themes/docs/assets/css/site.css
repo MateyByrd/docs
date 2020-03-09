@@ -44,7 +44,7 @@ a:hover {
     @apply text-teal-600 !important;
 }
 a:visited {
-    @apply text-indigo-900;
+    @apply text-indigo-800;
 }
 
 p {
@@ -113,11 +113,10 @@ a.footnote-ref {
 }
 
 .footnotes {
-    @apply bg-gray-100;
     @apply mx-4;
     @apply py-1;
-    @apply rounded-lg;
     @apply text-sm;
+    @apply text-gray-500;
 }
 
 .footnotes a.footnote-backref {
@@ -127,4 +126,13 @@ a.footnote-ref {
 .footnotes p {
     @apply p-0;
     @apply mb-1;
+}
+
+.navigation .navigation-option {
+    @apply border border-gray-200;
+    @apply bg-white;
+}
+
+.navigation .navigation-option:hover {
+    @apply bg-gray-100;
 }

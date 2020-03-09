@@ -1,5 +1,10 @@
 <section id="header">
-    <div class="content mx-auto mt-6 mb-2">
-        <div class="text-3xl mx-8">{{ .Title }}</div>
+    <div class="content block mx-auto mt-6 mb-2">
+        <div class="text-3xl mx-8 inline-flex items-center">
+            <div class="h-12 w-auto mr-2">
+                {{- partial "title_icon.html" . -}}
+            </div>
+            {{ .Title }}
+        </div>
     </div>
 </section>

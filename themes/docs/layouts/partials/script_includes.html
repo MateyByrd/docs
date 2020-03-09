@@ -1,0 +1,7 @@
+{{ if .Site.IsServer }}
+    {{ $script := resources.Get "js/DarkMode.js" }}
+<script defer src="{{ $script.Permalink }}"></script>
+{{ else }}
+    {{ $script := resources.Get "js/DarkMode.js" | minify | fingerprint }}
+<script defer src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+{{ end }}
