@@ -1,5 +1,7 @@
 ---
 title: Fingerprinting
+icon: /img/fingerprint-icon.png
+img:
 ---
 Over the last years we have seen many aggressive efforts from different companies (Apple, Mozilla) to limit the amount of tracking that can be done through browsers[^nytimes]. 
 Because of these efforts advertisers had to find different ways to track users across the web.
